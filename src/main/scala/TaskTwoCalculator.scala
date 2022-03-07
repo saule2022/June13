@@ -1,7 +1,7 @@
 import scala.io.StdIn.readLine
 
 object TaskTwoCalculator extends App {
-println("Xmas bonus calculator")
+println("X-mas bonus calculator")
   val yourName = readLine("Hi, what is your name? ")
   val yourYears = readLine(s"Nice to meet you, $yourName. How many years have you been working at the firm? ")
   if (yourYears.toInt < 2) {
