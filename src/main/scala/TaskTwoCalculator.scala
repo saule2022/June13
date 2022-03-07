@@ -7,7 +7,7 @@ println("X-mas bonus calculator")
   if (yourYears.toInt <= 2) {
     println("Sorry, no bonus this year.")
   }
-  else if (yourYears.toInt > 2) {
+  else {
     val yourWage = readLine("What your monthly wage would be? ")
     val bonus = yourWage.toDouble * 0.15 * (yourYears.toDouble - 2)
     val bonusI = bonus.toInt
