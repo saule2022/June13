@@ -4,6 +4,7 @@ object TaskFourFizzBuzz extends App{
   val buzz = 7
   val minValue = 1
   val maxValue = 100
+
 for (x <- minValue to maxValue) {
   if (x % fizz == 0 && x % buzz == 0)
     print("FizzBuzz, ")
