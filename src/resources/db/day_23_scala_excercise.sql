@@ -5,7 +5,7 @@ SELECT * FROM customers c
 WHERE Country = 'Germany';
 
 SELECT * FROM employees e 
-WHERE Title = 'Sales Support Agent';
+WHERE Title = '%Sales%Agent%';
 
 SELECT DISTINCT BillingCountry FROM invoices i;
 
