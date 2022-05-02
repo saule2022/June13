@@ -1,6 +1,10 @@
-SELECT * FROM tracks t 
-ORDER BY Name DESC
-LIMIT 25
-OFFSET 10;
+SELECT * FROM customers c 
+WHERE Country = "Germany";
+
+SELECT * FROM employees e 
+WHERE Title = 'Sales Support Agent';
+
+SELECT DISTINCT BillingCountry FROM invoices i;
+
 
 
