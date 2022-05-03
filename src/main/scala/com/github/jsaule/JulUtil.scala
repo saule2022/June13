@@ -41,13 +41,4 @@ object JulUtil {
       bufferedSource.close()
       lines
     }
-  println(System.getProperty("user.dir")) // get path
-  //takes lines of text from file
-  //for (line <- Source.fromFile(filePath).getLines) println(line)
-  //val textFromFile = Source.fromFile(filePath).mkString
-  //println(textFromFile)
-  //makes space lines println("\n"*2)
-  //read text from file and print it:
-  //val linesFromFile = Source.fromFile(relativeFilePath).getLines.toArray
-  //for (line <- linesFromFile) println(line)
 }
