@@ -40,9 +40,17 @@ class Documents(title:String = "", author:String = "", url:String = "", rows:Arr
     bufferedSource.mkString
   }
 
+  var authorT = ""
+  if (author == "") {authorT = JulUtil.GutenbergUtil.getAuthor(textArray)}
+  else authorT = author
+
+  var titleT = ""
+  if (title == "") {titleT = JulUtil.GutenbergUtil.getTitle(textArray)}
+  else titleT = title
+
   val firstRow = s"URL: $url \n"
-  val secondRow = s"Author: $author \n"
-  val thirdRow = s"Title: $title \n"
+  val secondRow = s"Author: $authorT \n"
+  val thirdRow = s"Title: $titleT \n"
   val threeNewLines = s"\n\n\n"
 
   var text: String = getDataLinesFromURL(url)
