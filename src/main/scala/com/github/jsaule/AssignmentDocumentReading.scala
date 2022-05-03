@@ -11,10 +11,6 @@ import scala.collection.mutable.ArrayBuffer
 class Documents(title:String = "", author:String = "", url:String = "", rows:Array[String] = Array[String]()) {
   val rowCount: Int = rows.length
   val wordCount: Int = JulUtil.getWordCountPerLine(rows).sum
-  val firstRow = s"URL: $url \n"
-  val secondRow = s"Author: $author \n"
-  val thirdRow = s"Title: $title \n"
-  val threeNewLines = s"\n\n\n"
   val folderForDocuments = "src/resources/texts/"
 
   def addTimeStampToUrl(): String = {
@@ -43,6 +39,12 @@ class Documents(title:String = "", author:String = "", url:String = "", rows:Arr
     val bufferedSource = Source.fromURL(url)
     bufferedSource.mkString
   }
+
+  val firstRow = s"URL: $url \n"
+  val secondRow = s"Author: $author \n"
+  val thirdRow = s"Title: $title \n"
+  val threeNewLines = s"\n\n\n"
+
   var text: String = getDataLinesFromURL(url)
   val rowsALL: String = firstRow + secondRow + thirdRow + threeNewLines + text
   var dst: String = folderForDocuments + createDocumentName
