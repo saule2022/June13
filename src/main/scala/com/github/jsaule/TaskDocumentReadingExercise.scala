@@ -5,6 +5,8 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.io.FileWriter
 
+//i am not sure if i got task correctly, so this is version 1
+
 class Document(title:String = "", author:String = "", url:String = "", rows:Array[String] = Array[String]()) {
   val rowCount: Int = rows.length
   val wordCount: Int = JulUtil.getWordCountPerLine(rows).sum
