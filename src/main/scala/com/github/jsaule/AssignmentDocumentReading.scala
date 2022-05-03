@@ -50,12 +50,12 @@ class Documents(title:String = "", author:String = "", url:String = "", rows:Arr
   var dst: String = folderForDocuments + createDocumentName
 
   def saveDocument(dst: String = dst, rowsALL: String = rowsALL, append:Boolean=false): Unit = {
+    println(s"$url saved to $dst")
     val fw = new FileWriter(dst, append)
     if (append) fw.write("\n")
     fw.write(rowsALL)
     fw.close()
   }
-  saveDocument(dst, rowsALL)
 }
 
 object AssignmentDocumentReading extends App {
