@@ -12,7 +12,6 @@ object Day2Exercise extends App {
 
   def multiply(accumulator: Int, oddSquares: Int): Int = {
     val theMultipl = accumulator * oddSquares
-
     theMultipl
   }
   println(oddSquares.reduce(multiply))
