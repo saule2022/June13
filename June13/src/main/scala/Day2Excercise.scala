@@ -21,3 +21,5 @@ object Day2Exercise extends App {
   //goal would be to use view map filter reduce in a single line
   //you can do it first in separate operations of course
 }
+
+
