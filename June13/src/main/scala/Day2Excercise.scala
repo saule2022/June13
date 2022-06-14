@@ -17,6 +17,7 @@ object Day2Exercise extends App {
   }
   println(oddSquares.reduce(multiply))
 
+
   //print product(multiplication) of odd squares of numbers from 1 to user input
   //so user enters 5
   //answer would be 1*9*25 = 225
