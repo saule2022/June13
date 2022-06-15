@@ -8,7 +8,6 @@ object Day2Exercise extends App {
  //val squares = numbers.map(n =>n*n)
   val oddSquares = numbers.map(n =>n*n).filter(n => n*n %2 == 1)
   println(oddSquares.mkString(","))
-
   def multiply(accumulator: Int, oddSquares: Int): Int = {
     val theMultipl = accumulator * oddSquares
     theMultipl
