@@ -175,6 +175,13 @@ WHERE license_id ="291182";
 
 SELECT ssn, name  FROM person p
 WHERE license_id ="918773";
+--or
+SELECT ssn, name  FROM person p
+WHERE license_id =(SELECT id  FROM drivers_license dl
+WHERE car_make  LIKE 'Tesla' AND car_model ="Model S" AND hair_color ="red" AND gender ="female");
+
+--Gives one name: Miranda Priestly
+
 
 --checking income, must be rich :))))
 SELECT annual_income  FROM income i
